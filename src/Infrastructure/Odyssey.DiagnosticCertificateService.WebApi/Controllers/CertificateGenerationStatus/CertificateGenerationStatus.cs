@@ -1,5 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Odyssey.DiagnosticCertificateService.Application.Queries.CertificateRequest;
+using System;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Odyssey.DiagnosticCertificateService.WebApi.Controllers.CertificateGenerationStatus
 {
@@ -12,11 +17,22 @@ namespace Odyssey.DiagnosticCertificateService.WebApi.Controllers.CertificateGen
         // GET: 
         [HttpGet]
         [Route("status")]
-        public ActionResult Status(int id)
+        public async Task<IActionResult> Status()
         {
-            return Ok();
+            try
+            {
+                CertificateStatusResponse response = new CertificateStatusResponse
+                {
+                    Success = true
+                };
+                return Ok(response);
+            }
+            catch
+            {
+                Console.WriteLine("exeption caught");
+            }
+            return BadRequest();
         }
-
        
         
     }
