@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ClassLibrary1\ClassLibrary1.csproj" />
+    <ProjectReference Include="..\..\Application\Odyssey.DiagnosticCertificateService.Application\Odyssey.DiagnosticCertificateService.Application.csproj" />
+    <ProjectReference Include="..\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj" />
   </ItemGroup>
 
 </Project>
