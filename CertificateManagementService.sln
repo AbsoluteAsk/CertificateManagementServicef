@@ -5,8 +5,6 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Domain", "01-Domain", "{0341B460-74D1-4042-A8D3-37546D4E75E4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Domain", "src\Core\Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj", "{24EEDA43-C2F2-4725-B5B0-F4A465A07107}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Application", "02-Application", "{A88BF0C0-F63E-4B53-AA19-D63BF026AB00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Infrastructure", "03-Infrastructure", "{BFEF0BD5-54D3-4483-A982-6E8DFF2B1E2B}"
@@ -22,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertifica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Application", "src\Application\Odyssey.DiagnosticCertificateService.Application\Odyssey.DiagnosticCertificateService.Application.csproj", "{DBCDD38E-943F-401D-A98A-DFA498E658C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey.DiagnosticCertificateService.Bootstrap", "src\Infrastructure\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj", "{38BAD4D7-9E50-4ACE-9168-902B69F64581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Bootstrap", "src\Infrastructure\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj", "{38BAD4D7-9E50-4ACE-9168-902B69F64581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey.DiagnosticCertificateService.Domain", "Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj", "{E409986A-3B8F-49F7-AE4A-BA7173011F9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,10 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24EEDA43-C2F2-4725-B5B0-F4A465A07107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24EEDA43-C2F2-4725-B5B0-F4A465A07107}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24EEDA43-C2F2-4725-B5B0-F4A465A07107}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24EEDA43-C2F2-4725-B5B0-F4A465A07107}.Release|Any CPU.Build.0 = Release|Any CPU
 		{36DA476B-77DB-4730-879E-416407BD666E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{36DA476B-77DB-4730-879E-416407BD666E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36DA476B-77DB-4730-879E-416407BD666E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -50,16 +46,20 @@ Global
 		{38BAD4D7-9E50-4ACE-9168-902B69F64581}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38BAD4D7-9E50-4ACE-9168-902B69F64581}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38BAD4D7-9E50-4ACE-9168-902B69F64581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E409986A-3B8F-49F7-AE4A-BA7173011F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E409986A-3B8F-49F7-AE4A-BA7173011F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E409986A-3B8F-49F7-AE4A-BA7173011F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E409986A-3B8F-49F7-AE4A-BA7173011F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{24EEDA43-C2F2-4725-B5B0-F4A465A07107} = {0341B460-74D1-4042-A8D3-37546D4E75E4}
 		{36DA476B-77DB-4730-879E-416407BD666E} = {BFEF0BD5-54D3-4483-A982-6E8DFF2B1E2B}
 		{9BAC2FF2-F062-4FAA-9B0A-3A65E15037A5} = {BFEF0BD5-54D3-4483-A982-6E8DFF2B1E2B}
 		{DBCDD38E-943F-401D-A98A-DFA498E658C5} = {A88BF0C0-F63E-4B53-AA19-D63BF026AB00}
 		{38BAD4D7-9E50-4ACE-9168-902B69F64581} = {BFEF0BD5-54D3-4483-A982-6E8DFF2B1E2B}
+		{E409986A-3B8F-49F7-AE4A-BA7173011F9C} = {0341B460-74D1-4042-A8D3-37546D4E75E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {487C34FB-1B89-4D21-95F2-4123B305C2B4}
