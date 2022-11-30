@@ -22,9 +22,9 @@ namespace Odyssey.DiagnosticCertificateService.Bootstrap
 
         public static void MongoDb(IServiceCollection services, IConfiguration configuration)
         {
-            var mongoClient = new MongoClient(configuration.GetSection("CMSDatabaseSettings:ConnectionString").Value);
-            var mongoDatabase = mongoClient.GetDatabase(configuration.GetSection("CMSDatabaseSettings:CertificateManagementService").Value);
-            _csrCollection = mongoDatabase.GetCollection<UserReq>(configuration.GetSection("CMSDatabaseSettings:CSRCollection").Value);
+           // var mongoClient = new MongoClient(configuration.GetSection("CMSDatabaseSettings:ConnectionString").Value);
+            //var mongoDatabase = mongoClient.GetDatabase(configuration.GetSection("CMSDatabaseSettings:CertificateManagementService").Value);
+            //_csrCollection = mongoDatabase.GetCollection<UserReq>(configuration.GetSection("CMSDatabaseSettings:CSRCollection").Value);
         }
     }
 }

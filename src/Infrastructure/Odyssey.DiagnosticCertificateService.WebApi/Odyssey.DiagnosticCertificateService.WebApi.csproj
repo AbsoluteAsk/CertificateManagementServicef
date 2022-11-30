@@ -1,17 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>b00349fb-49fb-4bc8-9fe4-992794e88f47</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj" />
     <ProjectReference Include="..\..\Application\Odyssey.DiagnosticCertificateService.Application\Odyssey.DiagnosticCertificateService.Application.csproj" />
     <ProjectReference Include="..\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj" />
   </ItemGroup>

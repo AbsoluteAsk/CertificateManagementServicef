@@ -1,3 +1,4 @@
+using Amazon.SQS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +9,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Odyssey.DiagnosticCertificateService.Bootstrap;
+using Odyssey.DiagnosticCertificateService.SQS.Helpers;
+using Odyssey.DiagnosticCertificateService.SQS.Model;
+using Odyssey.DiagnosticCertificateService.SQS.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +33,11 @@ namespace Odyssey.DiagnosticCertificateService.WebApi
         {
 
             services.AddControllers();
+            var appSettingsSection = Configuration.GetSection("ServiceConfiguration");
+            services.AddAWSService<IAmazonSQS>();
+            services.Configure<ServiceConfiguration>(appSettingsSection);
+            services.AddTransient<IAWSSQSService, AWSSQSService>();
+            services.AddTransient<IAWSSQSHelper, AWSSQSHelper>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Odyssey.DiagnosticCertificateService.WebApi", Version = "v1" });
