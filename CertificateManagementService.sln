@@ -20,11 +20,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertifica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Bootstrap", "src\Infrastructure\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj", "{38BAD4D7-9E50-4ACE-9168-902B69F64581}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Domain", "Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj", "{E409986A-3B8F-49F7-AE4A-BA7173011F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.Domain", "src\Core\Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj", "{E409986A-3B8F-49F7-AE4A-BA7173011F9C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "TestProject1\TestProject1.csproj", "{62630904-BC4C-48F1-B10E-93D3ABED2281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "src\Infrastructure\TestProject1\TestProject1.csproj", "{62630904-BC4C-48F1-B10E-93D3ABED2281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey.DiagnosticCertificateService.SQS", "Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj", "{283918A5-4C29-4C07-A12C-17AB6296BC2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey.DiagnosticCertificateService.SQS", "src\Application\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj", "{283918A5-4C29-4C07-A12C-17AB6296BC2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
