@@ -24,7 +24,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertifica
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "src\Infrastructure\TestProject1\TestProject1.csproj", "{62630904-BC4C-48F1-B10E-93D3ABED2281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odyssey.DiagnosticCertificateService.SQS", "src\Application\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj", "{283918A5-4C29-4C07-A12C-17AB6296BC2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Odyssey.DiagnosticCertificateService.SQS", "src\Application\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj", "{283918A5-4C29-4C07-A12C-17AB6296BC2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

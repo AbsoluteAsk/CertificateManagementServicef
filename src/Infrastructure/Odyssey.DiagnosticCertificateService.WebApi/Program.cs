@@ -22,5 +22,7 @@ namespace Odyssey.DiagnosticCertificateService.WebApi
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+
     }
 }

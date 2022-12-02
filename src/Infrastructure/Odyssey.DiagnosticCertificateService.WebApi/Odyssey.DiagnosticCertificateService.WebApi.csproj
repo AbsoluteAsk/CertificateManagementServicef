@@ -7,14 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWS.Logger.SeriLog" Version="3.2.0" />
+    <PackageReference Include="AWSSDK.CloudWatchLogs" Version="3.7.102.3" />
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj" />
     <ProjectReference Include="..\..\Application\Odyssey.DiagnosticCertificateService.Application\Odyssey.DiagnosticCertificateService.Application.csproj" />
+    <ProjectReference Include="..\..\Application\Odyssey.DiagnosticCertificateService.SQS\Odyssey.DiagnosticCertificateService.SQS.csproj" />
     <ProjectReference Include="..\Odyssey.DiagnosticCertificateService.Bootstrap\Odyssey.DiagnosticCertificateService.Bootstrap.csproj" />
   </ItemGroup>
 

@@ -12,6 +12,7 @@ using Odyssey.DiagnosticCertificateService.Bootstrap;
 using Odyssey.DiagnosticCertificateService.SQS.Helpers;
 using Odyssey.DiagnosticCertificateService.SQS.Model;
 using Odyssey.DiagnosticCertificateService.SQS.Service;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,9 @@ namespace Odyssey.DiagnosticCertificateService.WebApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Log.Logger = new LoggerConfiguration()
+       .ReadFrom.Configuration(configuration)
+       .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
