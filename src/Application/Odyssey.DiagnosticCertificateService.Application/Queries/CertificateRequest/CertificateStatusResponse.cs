@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Odyssey.DiagnosticCertificateService.Application.Queries.CertificateRequest
+namespace Odyssey.DiagnosticCertificateService.Application.Queries.CertificateRequest1
 {
     public class CertificateStatusResponse
     {

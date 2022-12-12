@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj" />
+    <ProjectReference Include="..\..\..\Odyssey.DiagnosticCertificateService.Infrastructure.Data\Odyssey.DiagnosticCertificateService.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\..\Core\Odyssey.DiagnosticCertificateService.Domain\Odyssey.DiagnosticCertificateService.Domain.csproj" />
   </ItemGroup>
 
